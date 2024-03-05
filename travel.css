@@ -133,3 +133,57 @@ nav input[type="text"] {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+.about_content{
+    color: white;
+    width: 75vw;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+.ourTeam{
+    border-color: red;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+
+.membersBox{
+    display: flex;
+    border: red;
+    border-radius: 5px;
+    background-color: #9ce1d1;
+    height:150px;
+    width: 250px;
+    font-size: 15px;
+    margin: 10px;
+}
+.membersBox img{
+    width: 40px;
+    height: auto;
+}
+.membersBtn{
+    background-color: rgb(10, 127, 131);
+    color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    width: 250px;
+}
+.about_description{
+    font-size: 50px;
+    color: rgb(228, 227, 227);
+    width: 240px;
+    position: absolute;
+    top: 370px;
+    left: 150px;
+}
