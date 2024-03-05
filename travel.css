@@ -8,40 +8,128 @@
     box-sizing: border-box;
 }
 nav {
-    background-color: #5b5555;
+    background-color: #9ce1d1;
     /* padding: 10px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
   
-  nav ul {
+  nav ul{
     list-style-type: none;
     /* padding: 0; */
     display: flex; /*Make the ul a flex container */
-    align-items: center; 
+    /* align-items: center;  */
+    justify-content: center;
   }
   
   nav ul li {
     /* display: inline; */
-    margin-right: 10px;
+    margin-right: 23px;
   }
   
   nav a {
     text-decoration: none;
-    color: #333;
+    color: rgb(189, 80, 7);
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: auto;
+    height: 100%; /* Add this line */
+    line-height: 1; /* Add this line */
+  }
+
+  nav a img {
+    width: 40px; /* Set the width, and the height will adjust automatically */
   }
 
   body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Specify a fallback font family */
-    color: #333; /* Set the default text color */
-    background-image: url('./BP.jpg');
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('./travel_bg2.jpg') center/cover no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    background-attachment: fixed;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5); /* Semi-transparent white overlay */
+    z-index: -1; /* Ensure the overlay is behind the content */
+  }
+
+nav ul li.searchbox {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+nav button {
+    margin-right: 5px; /* Adjust as needed for spacing between buttons */
+}
+nav input[type="text"] {
+    margin-right: 5px;
+    padding: 8px; /* Adjust padding for better visibility */
+    border: none; /* Remove border for a cleaner look */
+}
+.social-icons {
+    position: fixed;
+    left: 10px; /* Adjust the left distance as needed */
+    top: 50%; /* Adjust the top distance as needed */
+    transform: translateY(-50%);
+}
+
+.social-icons ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgb(204, 138, 138);
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+.home_tag{
+    width: 200px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    cursor: move;
+}
+.home_description{
+    font-size: 13px;
+    color: rgb(228, 227, 227);
+    width: 240px;
+    position: absolute;
+    top: 370px;
+    left: 150px;
+}
+.bookBtn{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    color: white;
+    background-color: rgb(20, 112, 110);
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

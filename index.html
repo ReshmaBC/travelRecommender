@@ -4,20 +4,39 @@
   <meta charset="UTF-8">
   <title>Travel Recommender</title>
   <link rel="stylesheet" href="./travel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <nav><h1>TravelRecommender</h1>
-<ul>
-  <li><a href="./index.html" id="home">Home </a></li>
-  <li><a href="./aboutUs.html" id="contact">About Us </a></li>
-  <li><a href="./contactUs.html" id="contact">Contact Us </a></li>
-  <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
-  <li><button id='btnSearch'>Search</button>
-  <li><button id="close">Close</button></li>
+    <nav>
+        <a href="#"><img src="./travelcon.png"><strong>TravelRecommender</strong></a>
+        <ul class="cent">
+            <li><a href="./index.html" id="home">Home</a></li>
+            <li><a href="./aboutUs.html" id="about">About Us</a></li>
+            <li><a href="./contactUs.html" id="contact">Contact Us</a></li>
+            <li class="searchbox">
+                <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+                <button id='btnSearch'>Search</button>
+                <button id="close">Close</button>
+            </li>
+        </ul>
+    </nav>
 
-</ul>
-</nav>
-<div class="container">
+<div class="social-icons">
+    <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <!-- Add more social media icons as needed -->
+    </ul>
+</div>
+<div class="homeContent">
+    <div class="home_tag">
+    <h1>EXPLORE DREAM DESTINATION</h1>
+    </div>
+    <p class="home_description">It encourages exploration of unfamiliar territories, embracing diverse cultures and lanscapes, while pursuing the desired destination that captivates the heart and ignites a senseof wonder</p>
+    <button class="bookBtn"><strong>BOOK NOW</strong></button>
+</div>
+<!-- <div class="container">
 <div class="analysisForm">
 <h1>Healthcare Data Analysis</h1>
 <div>
@@ -51,7 +70,7 @@
 <div class="searchCondition">
     <div id="result"></div>
 </div>
-</div>
+</div> -->
 <script src="./health_analysis.js"></script>
 </body>
 </html>
